@@ -1,0 +1,20 @@
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    {% endblock %}
+    {% bootstrap_css %}
+
+</head>
+<body>
+{% include "layouts/public/header.html" %}
+
+{% block body %}
+{% endblock %}
+
+{% include "layouts/public/footer.html" %}
+{% bootstrap_javascript jquery='full' %}
+</body>
+</html>
